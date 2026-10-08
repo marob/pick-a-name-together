@@ -1,0 +1,33 @@
+{
+  "name": "pick-a-name-together",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pick a baby name together: each parent votes on their own, then you compare (QR code / link). fr/en/es.",
+  "homepage": "https://marob.github.io/pick-a-name-together/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marob/pick-a-name-together.git"
+  },
+  "scripts": {
+    "data": "node scripts/build-names.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "jsqr": "1.4.0",
+    "preact": "11.0.1",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.6",
+    "@types/qrcode": "1.5.6",
+    "@vitejs/plugin-basic-ssl": "2.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vite-plugin-pwa": "2.0.0"
+  }
+}
